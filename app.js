@@ -1,109 +1,109 @@
 const defaultWordSeeds = [
-  ["people", "爸爸", "baba", "👨", ["爸爸抱", "爸爸来", "爸爸好"]],
-  ["people", "妈妈", "mama", "👩", ["妈妈抱", "妈妈来", "妈妈亲"]],
-  ["people", "爷爷", "yeye", "👴", ["爷爷好", "爷爷来", "找爷爷"]],
-  ["people", "奶奶", "nainai", "👵", ["奶奶好", "奶奶抱", "找奶奶"]],
-  ["people", "外公", "waigong", "👴", ["外公好", "外公来", "找外公"]],
-  ["people", "外婆", "waipo", "👵", ["外婆好", "外婆抱", "找外婆"]],
-  ["people", "哥哥", "gege", "👦", ["哥哥玩", "哥哥来", "找哥哥"]],
-  ["people", "姐姐", "jiejie", "👧", ["姐姐玩", "姐姐来", "找姐姐"]],
-  ["people", "弟弟", "didi", "🧒", ["弟弟小", "弟弟来", "抱弟弟"]],
-  ["people", "妹妹", "meimei", "👧", ["妹妹小", "妹妹来", "抱妹妹"]],
-  ["people", "宝宝", "baobao", "👶", ["宝宝好", "宝宝来", "宝宝笑"]],
-  ["people", "老师", "laoshi", "🧑‍🏫", ["老师好", "找老师", "老师来"]],
-  ["people", "阿姨", "ayi", "👩", ["阿姨好", "阿姨来", "找阿姨"]],
-  ["people", "叔叔", "shushu", "👨", ["叔叔好", "叔叔来", "找叔叔"]],
-  ["people", "医生", "yisheng", "🧑‍⚕️", ["看医生", "医生好", "医生来"]],
-  ["people", "朋友", "pengyou", "🧒", ["小朋友", "一起玩", "朋友好"]],
-  ["people", "自己", "ziji", "🙂", ["我自己", "自己来", "自己拿"]],
+  ["people", "爸爸", "baba", "👨", ["叫爸爸", "爸爸抱抱", "爸爸来了"]],
+  ["people", "妈妈", "mama", "👩", ["叫妈妈", "妈妈抱抱", "妈妈来了"]],
+  ["people", "爷爷", "yeye", "👴", ["叫爷爷", "爷爷抱抱", "爷爷来了"]],
+  ["people", "奶奶", "nainai", "👵", ["叫奶奶", "奶奶抱抱", "奶奶来了"]],
+  ["people", "外公", "waigong", "👴", ["叫外公", "外公抱抱", "外公来了"]],
+  ["people", "外婆", "waipo", "👵", ["叫外婆", "外婆抱抱", "外婆来了"]],
+  ["people", "哥哥", "gege", "👦", ["叫哥哥", "哥哥一起玩", "哥哥来了"]],
+  ["people", "姐姐", "jiejie", "👧", ["叫姐姐", "姐姐一起玩", "姐姐来了"]],
+  ["people", "弟弟", "didi", "🧒", ["叫弟弟", "弟弟小小", "抱抱弟弟"]],
+  ["people", "妹妹", "meimei", "👧", ["叫妹妹", "妹妹小小", "抱抱妹妹"]],
+  ["people", "宝宝", "baobao", "👶", ["我是宝宝", "宝宝来了", "宝宝笑了"]],
+  ["people", "老师", "laoshi", "🧑‍🏫", ["老师好", "找老师", "老师来了"]],
+  ["people", "阿姨", "ayi", "👩", ["阿姨好", "叫阿姨", "阿姨来了"]],
+  ["people", "叔叔", "shushu", "👨", ["叔叔好", "叫叔叔", "叔叔来了"]],
+  ["people", "医生", "yisheng", "🧑‍⚕️", ["看医生", "医生帮忙", "医生来了"]],
+  ["people", "朋友", "pengyou", "🧒", ["小朋友", "一起玩", "朋友来了"]],
+  ["people", "自己", "ziji", "🙂", ["我自己来", "自己拿", "自己走"]],
 
-  ["need", "抱抱", "baobao", "🫂", ["要抱抱", "妈妈抱", "爸爸抱"]],
-  ["need", "吃饭", "chifan", "🍚", ["饭饭", "吃一口", "我要吃"]],
-  ["need", "喝水", "heshui", "🥤", ["杯杯", "喝一口", "我要喝"]],
-  ["need", "喝奶", "henai", "🍼", ["奶奶", "奶瓶", "我要喝"]],
-  ["need", "尿尿", "niaoniao", "🚽", ["要尿尿", "去厕所", "脱裤子"]],
-  ["need", "臭臭", "chouchou", "🚽", ["拉臭臭", "换尿布", "擦擦"]],
-  ["need", "还要", "haiyao", "☝️", ["还要吃", "还要玩", "再来"]],
-  ["need", "不要", "buyao", "🙅", ["不要了", "不想要", "不要碰"]],
-  ["need", "帮忙", "bangmang", "🤝", ["帮帮我", "妈妈帮", "爸爸帮"]],
-  ["need", "拿来", "nalai", "🤲", ["拿给我", "拿这个", "给宝宝"]],
-  ["need", "开门", "kaimen", "🚪", ["门开开", "开一下", "我要开"]],
-  ["need", "穿鞋", "chuanxie", "👟", ["穿鞋鞋", "出门啦", "穿上鞋"]],
-  ["need", "脱鞋", "tuoxie", "🦶", ["脱鞋鞋", "回家啦", "脱下来"]],
+  ["need", "抱抱", "baobao", "🫂", ["我要抱抱", "抱抱我", "妈妈抱抱"]],
+  ["need", "吃饭", "chifan", "🍚", ["我要吃饭", "吃一口", "宝宝饿了"]],
+  ["need", "喝水", "heshui", "🥤", ["我要喝水", "喝一口", "宝宝渴了"]],
+  ["need", "喝奶", "henai", "🍼", ["我要喝奶", "拿奶瓶", "喝一口奶"]],
+  ["need", "尿尿", "niaoniao", "🚽", ["我要尿尿", "去厕所", "尿尿了"]],
+  ["need", "臭臭", "chouchou", "🚽", ["我要臭臭", "拉臭臭", "换尿布"]],
+  ["need", "还要", "haiyao", "☝️", ["我还要", "还要一个", "再来一次"]],
+  ["need", "不要", "buyao", "🙅", ["我不要", "不要了", "不要碰"]],
+  ["need", "帮忙", "bangmang", "🤝", ["帮帮我", "妈妈帮忙", "爸爸帮忙"]],
+  ["need", "拿来", "nalai", "🤲", ["帮我拿", "拿过来", "拿这个"]],
+  ["need", "开门", "kaimen", "🚪", ["帮我开门", "门开开", "我要出去"]],
+  ["need", "穿鞋", "chuanxie", "👟", ["我要穿鞋", "穿鞋出门", "穿上鞋"]],
+  ["need", "脱鞋", "tuoxie", "🦶", ["我要脱鞋", "脱鞋回家", "脱下来"]],
   ["need", "擦擦", "caca", "🧻", ["擦嘴巴", "擦手手", "擦干净"]],
-  ["need", "疼疼", "tengteng", "🤕", ["这里疼", "要抱抱", "吹一吹"]],
-  ["need", "渴了", "kele", "🥤", ["喝水水", "要杯杯", "想喝水"]],
-  ["need", "饿了", "ele", "🍚", ["吃饭饭", "要吃饭", "肚子饿"]],
+  ["need", "疼疼", "tengteng", "🤕", ["这里疼", "帮我吹吹", "要抱抱"]],
+  ["need", "渴了", "kele", "🥤", ["我渴了", "想喝水", "拿杯子"]],
+  ["need", "饿了", "ele", "🍚", ["我饿了", "想吃饭", "吃一点"]],
 
-  ["thing", "球", "qiu", "⚽", ["球球", "滚球", "拍球"]],
-  ["thing", "车", "che", "🚗", ["车车", "开车", "滴滴"]],
-  ["thing", "灯", "deng", "💡", ["灯灯", "亮了", "关灯"]],
-  ["thing", "门", "men", "🚪", ["门门", "开门", "关门"]],
-  ["thing", "鞋", "xie", "👟", ["鞋鞋", "穿鞋", "小鞋"]],
-  ["thing", "帽子", "maozi", "🧢", ["戴帽子", "小帽子", "帽帽"]],
-  ["thing", "杯子", "beizi", "🥤", ["杯杯", "喝水", "拿杯子"]],
-  ["thing", "勺子", "shaozi", "🥄", ["小勺子", "吃饭", "拿勺子"]],
-  ["thing", "碗", "wan", "🥣", ["小碗", "饭碗", "拿碗"]],
-  ["thing", "书", "shu", "📖", ["看书", "翻书", "小书"]],
-  ["thing", "包包", "baobao", "🎒", ["背包包", "拿包包", "小包"]],
-  ["thing", "床", "chuang", "🛏️", ["小床", "睡觉", "上床"]],
-  ["thing", "椅子", "yizi", "🪑", ["坐椅子", "小椅子", "椅子上"]],
-  ["thing", "积木", "jimu", "🧱", ["搭积木", "小积木", "放积木"]],
-  ["thing", "牙刷", "yashua", "🪥", ["刷牙", "小牙刷", "牙刷刷"]],
-  ["thing", "纸巾", "zhijin", "🧻", ["擦擦", "抽纸巾", "小纸巾"]],
-  ["thing", "玩具", "wanju", "🧸", ["玩玩具", "小玩具", "收玩具"]],
+  ["thing", "球", "qiu", "⚽", ["这是球", "滚一滚", "拍拍球"]],
+  ["thing", "车", "che", "🚗", ["这是车", "车车开", "滴滴滴"]],
+  ["thing", "灯", "deng", "💡", ["灯亮了", "开灯", "关灯"]],
+  ["thing", "门", "men", "🚪", ["这是门", "开门", "关门"]],
+  ["thing", "鞋", "xie", "👟", ["这是鞋", "穿鞋", "脱鞋"]],
+  ["thing", "帽子", "maozi", "🧢", ["戴帽子", "摘帽子", "小帽子"]],
+  ["thing", "杯子", "beizi", "🥤", ["拿杯子", "杯子里", "喝水"]],
+  ["thing", "勺子", "shaozi", "🥄", ["拿勺子", "用勺子", "吃饭"]],
+  ["thing", "碗", "wan", "🥣", ["拿碗", "碗里有饭", "小碗"]],
+  ["thing", "书", "shu", "📖", ["看书", "翻书", "读一读"]],
+  ["thing", "包包", "baobao", "🎒", ["拿包包", "背包包", "包里有"]],
+  ["thing", "床", "chuang", "🛏️", ["上床", "睡觉", "小床"]],
+  ["thing", "椅子", "yizi", "🪑", ["坐椅子", "椅子上", "小椅子"]],
+  ["thing", "积木", "jimu", "🧱", ["搭积木", "放积木", "高高的"]],
+  ["thing", "牙刷", "yashua", "🪥", ["拿牙刷", "刷牙", "刷一刷"]],
+  ["thing", "纸巾", "zhijin", "🧻", ["拿纸巾", "擦一擦", "抽纸巾"]],
+  ["thing", "玩具", "wanju", "🧸", ["玩玩具", "拿玩具", "收玩具"]],
 
-  ["animal", "猫", "mao", "🐱", ["猫猫", "喵喵", "小猫"]],
-  ["animal", "狗", "gou", "🐶", ["狗狗", "汪汪", "小狗"]],
-  ["animal", "鸭", "ya", "🦆", ["鸭鸭", "嘎嘎", "小鸭"]],
-  ["animal", "鱼", "yu", "🐟", ["鱼鱼", "游泳", "小鱼"]],
-  ["animal", "鸟", "niao", "🐦", ["鸟鸟", "飞飞", "小鸟"]],
-  ["animal", "牛", "niu", "🐮", ["牛牛", "哞哞", "小牛"]],
-  ["animal", "羊", "yang", "🐑", ["羊羊", "咩咩", "小羊"]],
-  ["animal", "马", "ma", "🐴", ["马马", "跑跑", "小马"]],
-  ["animal", "猪", "zhu", "🐷", ["猪猪", "哼哼", "小猪"]],
-  ["animal", "兔子", "tuzi", "🐰", ["兔兔", "跳跳", "小兔子"]],
-  ["animal", "鸡", "ji", "🐔", ["鸡鸡", "咯咯", "小鸡"]],
-  ["animal", "青蛙", "qingwa", "🐸", ["蛙蛙", "呱呱", "小青蛙"]],
-  ["animal", "老虎", "laohu", "🐯", ["虎虎", "嗷嗷", "大老虎"]],
-  ["animal", "大象", "daxiang", "🐘", ["象象", "长鼻子", "大象走"]],
-  ["animal", "熊猫", "xiongmao", "🐼", ["熊猫猫", "黑白", "熊猫吃"]],
-  ["animal", "猴子", "houzi", "🐵", ["猴猴", "爬爬", "小猴子"]],
-  ["animal", "乌龟", "wugui", "🐢", ["龟龟", "慢慢走", "小乌龟"]],
+  ["animal", "猫", "mao", "🐱", ["小猫叫", "喵喵喵", "猫猫来了"]],
+  ["animal", "狗", "gou", "🐶", ["小狗叫", "汪汪汪", "狗狗来了"]],
+  ["animal", "鸭", "ya", "🦆", ["小鸭叫", "嘎嘎嘎", "鸭鸭走"]],
+  ["animal", "鱼", "yu", "🐟", ["小鱼游", "游呀游", "鱼在水里"]],
+  ["animal", "鸟", "niao", "🐦", ["小鸟飞", "飞呀飞", "鸟叫了"]],
+  ["animal", "牛", "niu", "🐮", ["小牛叫", "哞哞哞", "牛牛来了"]],
+  ["animal", "羊", "yang", "🐑", ["小羊叫", "咩咩咩", "羊羊来了"]],
+  ["animal", "马", "ma", "🐴", ["小马跑", "马儿跑", "哒哒哒"]],
+  ["animal", "猪", "zhu", "🐷", ["小猪叫", "哼哼哼", "猪猪来了"]],
+  ["animal", "兔子", "tuzi", "🐰", ["兔子跳", "跳一跳", "小兔子"]],
+  ["animal", "鸡", "ji", "🐔", ["小鸡叫", "叽叽叽", "鸡来了"]],
+  ["animal", "青蛙", "qingwa", "🐸", ["青蛙叫", "呱呱呱", "青蛙跳"]],
+  ["animal", "老虎", "laohu", "🐯", ["老虎叫", "嗷嗷嗷", "大老虎"]],
+  ["animal", "大象", "daxiang", "🐘", ["大象走", "长鼻子", "大象来了"]],
+  ["animal", "熊猫", "xiongmao", "🐼", ["熊猫吃", "黑白熊猫", "熊猫来了"]],
+  ["animal", "猴子", "houzi", "🐵", ["猴子爬", "猴子跳", "小猴子"]],
+  ["animal", "乌龟", "wugui", "🐢", ["乌龟爬", "慢慢走", "小乌龟"]],
 
-  ["action", "跑", "pao", "🏃", ["跑跑", "快跑", "小脚跑"]],
-  ["action", "跳", "tiao", "🤸", ["跳跳", "小跳", "跳起来"]],
-  ["action", "拍手", "paishou", "👏", ["拍拍", "拍拍手", "拍一拍"]],
-  ["action", "吹", "chui", "🫧", ["吹吹", "吹泡泡", "轻轻吹"]],
-  ["action", "洗手", "xishou", "🧼", ["洗洗", "搓搓手", "洗干净"]],
-  ["action", "睡觉", "shuijiao", "😴", ["睡睡", "晚安", "闭眼睛"]],
-  ["action", "坐", "zuo", "🪑", ["坐坐", "坐下来", "坐椅子"]],
-  ["action", "站", "zhan", "🧍", ["站站", "站起来", "站好"]],
-  ["action", "走", "zou", "🚶", ["走走", "慢慢走", "一起走"]],
-  ["action", "推", "tui", "🫸", ["推推", "推车车", "轻轻推"]],
-  ["action", "拉", "la", "🫷", ["拉拉", "拉手手", "拉一下"]],
-  ["action", "拿", "na", "🤲", ["拿拿", "拿这个", "拿给我"]],
-  ["action", "放", "fang", "📥", ["放放", "放这里", "放进去"]],
-  ["action", "踢", "ti", "🦶", ["踢踢", "踢球", "小脚踢"]],
-  ["action", "摸", "mo", "✋", ["摸摸", "轻轻摸", "摸一摸"]],
+  ["action", "跑", "pao", "🏃", ["跑一跑", "快快跑", "一起跑"]],
+  ["action", "跳", "tiao", "🤸", ["跳一跳", "跳起来", "轻轻跳"]],
+  ["action", "拍手", "paishou", "👏", ["拍拍手", "拍一拍", "一起拍"]],
+  ["action", "吹", "chui", "🫧", ["吹一吹", "吹泡泡", "轻轻吹"]],
+  ["action", "洗手", "xishou", "🧼", ["洗洗手", "搓搓手", "洗干净"]],
+  ["action", "睡觉", "shuijiao", "😴", ["要睡觉", "晚安啦", "闭眼睛"]],
+  ["action", "坐", "zuo", "🪑", ["坐下来", "坐椅子", "坐好了"]],
+  ["action", "站", "zhan", "🧍", ["站起来", "站好了", "站一站"]],
+  ["action", "走", "zou", "🚶", ["走一走", "慢慢走", "一起走"]],
+  ["action", "推", "tui", "🫸", ["推一推", "推车车", "轻轻推"]],
+  ["action", "拉", "la", "🫷", ["拉一拉", "拉手手", "拉一下"]],
+  ["action", "拿", "na", "🤲", ["拿这个", "拿给我", "拿起来"]],
+  ["action", "放", "fang", "📥", ["放这里", "放进去", "放好了"]],
+  ["action", "踢", "ti", "🦶", ["踢一踢", "踢球球", "小脚踢"]],
+  ["action", "摸", "mo", "✋", ["摸一摸", "轻轻摸", "摸摸看"]],
   ["action", "亲亲", "qinqin", "😘", ["亲一下", "亲妈妈", "亲爸爸"]],
 
-  ["social", "笑", "xiao", "😄", ["笑笑", "开心", "哈哈"]],
-  ["social", "哭", "ku", "😢", ["哭哭", "难过", "要抱"]],
-  ["social", "拜拜", "baibai", "👋", ["再见", "挥挥手", "拜拜啦"]],
-  ["social", "你好", "nihao", "🙂", ["你好呀", "打招呼", "你好好"]],
+  ["social", "笑", "xiao", "😄", ["我笑了", "哈哈哈", "真开心"]],
+  ["social", "哭", "ku", "😢", ["我哭了", "难过了", "要抱抱"]],
+  ["social", "拜拜", "baibai", "👋", ["说拜拜", "挥挥手", "再见啦"]],
+  ["social", "你好", "nihao", "🙂", ["你好呀", "打招呼", "你好你好"]],
   ["social", "谢谢", "xiexie", "🙏", ["谢谢你", "谢谢妈妈", "谢谢爸爸"]],
-  ["social", "对不起", "duibuqi", "🙇", ["说抱歉", "没关系", "轻轻说"]],
-  ["social", "没关系", "meiguanxi", "🙂", ["没事", "没关系呀", "抱抱"]],
-  ["social", "喜欢", "xihuan", "🥰", ["我喜欢", "喜欢你", "喜欢玩"]],
-  ["social", "不喜欢", "buxihuan", "🙅", ["不想要", "不喜欢", "换一个"]],
-  ["social", "开心", "kaixin", "😃", ["开心呀", "好开心", "笑一笑"]],
-  ["social", "生气", "shengqi", "😠", ["生气了", "不开心", "抱一抱"]],
-  ["social", "害怕", "haipa", "😟", ["怕怕", "别怕", "抱抱"]],
-  ["social", "疼", "teng", "🤕", ["疼疼", "这里疼", "吹一吹"]],
+  ["social", "对不起", "duibuqi", "🙇", ["对不起", "轻轻说", "抱一抱"]],
+  ["social", "没关系", "meiguanxi", "🙂", ["没关系", "没事啦", "抱一抱"]],
+  ["social", "喜欢", "xihuan", "🥰", ["我喜欢", "喜欢你", "喜欢这个"]],
+  ["social", "不喜欢", "buxihuan", "🙅", ["我不喜欢", "不想要", "换一个"]],
+  ["social", "开心", "kaixin", "😃", ["我开心", "好开心", "笑一笑"]],
+  ["social", "生气", "shengqi", "😠", ["我生气了", "不开心", "抱一抱"]],
+  ["social", "害怕", "haipa", "😟", ["我害怕", "怕怕的", "抱抱我"]],
+  ["social", "疼", "teng", "🤕", ["这里疼", "疼疼的", "吹一吹"]],
   ["social", "好", "hao", "👍", ["好呀", "好的", "真好"]],
-  ["social", "不好", "buhao", "👎", ["不好呀", "不要", "换一个"]],
-  ["social", "等一下", "dengyixia", "⏳", ["等等", "等一下", "慢慢来"]],
+  ["social", "不好", "buhao", "👎", ["不好", "不要了", "换一个"]],
+  ["social", "等一下", "dengyixia", "⏳", ["等一下", "等一等", "慢慢来"]],
 ];
 
 const promptTemplates = {
@@ -164,8 +164,8 @@ const stagePalettes = {
 };
 
 const storageKeys = {
-  words: "babyWordsCardsV3",
-  done: "babyWordsDoneV3",
+  words: "babyWordsCardsV4",
+  done: "babyWordsDoneV4",
 };
 
 let words = loadWords();
@@ -174,6 +174,7 @@ let activeIndex = 0;
 let soundEnabled = true;
 let practiceOrderIds = [];
 let activeView = "practice";
+let preferredVoice = null;
 const doneWords = new Set(JSON.parse(localStorage.getItem(storageKeys.done) || "[]"));
 
 const el = {
@@ -504,13 +505,52 @@ function updateDoneCount() {
   el.doneCount.textContent = `${doneWords.size}个已练`;
 }
 
+function refreshPreferredVoice() {
+  if (!("speechSynthesis" in window)) return;
+  const voices = window.speechSynthesis.getVoices();
+  const chineseVoices = voices.filter((voice) => /zh|cmn|yue/i.test(`${voice.lang} ${voice.name}`));
+  const preference = [
+    "siri",
+    "tingting",
+    "yushu",
+    "yu-shu",
+    "meijia",
+    "sin-ji",
+    "xiaoxiao",
+    "xiaoyi",
+    "xiaobei",
+    "xiaoni",
+    "google 普通话",
+    "google mandarin",
+    "mandarin",
+    "普通话",
+    "中文",
+  ];
+
+  preferredVoice =
+    preference
+      .map((key) => chineseVoices.find((voice) => voice.name.toLowerCase().includes(key)))
+      .find(Boolean) ||
+    chineseVoices.find((voice) => voice.localService) ||
+    chineseVoices[0] ||
+    voices.find((voice) => /zh-CN/i.test(voice.lang)) ||
+    null;
+
+  if (preferredVoice) {
+    el.soundToggle.title = `声音：${preferredVoice.name}`;
+  }
+}
+
 function speakText(text) {
   if (!soundEnabled || !("speechSynthesis" in window)) return;
+  if (!preferredVoice) refreshPreferredVoice();
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "zh-CN";
-  utterance.rate = 0.76;
-  utterance.pitch = 1.12;
+  if (preferredVoice) utterance.voice = preferredVoice;
+  utterance.lang = preferredVoice?.lang || "zh-CN";
+  utterance.rate = 0.82;
+  utterance.pitch = 1.02;
+  utterance.volume = 1;
   window.speechSynthesis.speak(utterance);
 }
 
@@ -603,7 +643,7 @@ el.addCardButton.addEventListener("click", () => {
     imageLabel: "新词卡",
     prompt: "这是新词卡。可以改成宝宝最近想说的字。",
     activity: "看一看，指一指，再等宝宝尝试发声。",
-    chips: ["新词", "看看", "说说"],
+    chips: ["这是新词", "说一说", "再说一次"],
     palette: stagePalettes[stage],
   });
 
@@ -663,6 +703,11 @@ document.addEventListener("keydown", (event) => {
     speakCurrentWord();
   }
 });
+
+if ("speechSynthesis" in window) {
+  refreshPreferredVoice();
+  window.speechSynthesis.onvoiceschanged = refreshPreferredVoice;
+}
 
 switchView("practice");
 renderCards();
